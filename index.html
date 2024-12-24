@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+<script defer src="main.js"></script></head>
+<body>  
+    <div class = "header">
+        <h1>Doing Shit</h1>
+        <div class ="coolColors">
+            <button type="button" class="add">+</button>
+        </div>
+    </div>
+    <div class = "content">
+            <nav>
+                <div id="PS"><h3 id="project">Project</h3></div>
+                <div id="ES"><h3 id="events">Events</h3></div>
+                <div id="TS"><h3 id="tasks">Tasks</h3></div>
+            </nav>
+        <div class="list"></div>
+    </div>
+    <div class = "footer">
+        <h3>By: Anirudh Sharma</h3>
+        <div class = "coolColors"></div>
+    </div>
+    <dialog class="module">
+        <form class = "task">
+            <div class = "name">
+                <legend for="tn">Task Name:</legend>
+                <input type="text" id="tn" name="tn" placeholder="Ani">
+            </div>
+            <div class = "description">
+                <legend for="dn">Task Description:</legend>
+                <input type="text" id="dn" name="dn" placeholder="Some BS">
+            </div>
+            <div class = "priority">
+                <input type="radio" id="high" name="pn" value="High" title="High">
+                <label for="high">High</label>
+                <input type="radio" id="medium" name="pn" value="Medium" title="Medium">
+                <label for="medium">Medium</label>
+                <input type="radio" id="low" name="pn" value="Low" title="Low">
+                <label for="low">Low</label>
+            </div>
+            <div class = "type">
+                <input type="radio" id="p" name="tn" value="Project" title="Project">
+                <label for="high">Project</label>
+                <input type="radio" id="e" name="tn" value="Events" title="Events">
+                <label for="medium">Events</label>
+                <input type="radio" id="t" name="tn" value="Tasks" title="Tasks">
+                <label for="low">Tasks</label>
+            </div>
+            <div class="dueDate">
+                <legend for="dueDate">Due Date:</legend>
+                <input type="text" id="dd" name="dd" placeholder="Never">
+            </div>
+            <button type="button" class="submit">Submit</button>
+        </form>
+    </dialog>   
+</body>
+</html>
